@@ -5,7 +5,7 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_login import UserMixin, login_user, LoginManager, login_required, current_user, logout_user
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'kjAhEHAJdsn92844'
+app.config['SECRET_KEY'] = 'secret-key'
 
 # CONNECT TO DB
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///users.db'
